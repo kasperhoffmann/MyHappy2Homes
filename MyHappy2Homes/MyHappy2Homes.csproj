@@ -11,49 +11,46 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="Views\GuidesPAge.xaml.cs">
-      <DependentUpon>GuidesPage.xaml</DependentUpon>
-    </Compile>
     <Compile Update="Views\HomePAGE.xaml.cs">
       <DependentUpon>HomePage.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="Views\AdvicePage.xaml">
+    <EmbeddedResource Update="Views\MenuPages\AdvicePage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\CalenderPage.xaml">
+    <EmbeddedResource Update="Views\MenuPages\CalenderPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\ChatPage.xaml">
+    <EmbeddedResource Update="Views\MenuPages\ChatPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\ChildNeedsPage.xaml">
+    <EmbeddedResource Update="Views\MenuPages\ChildNeedsPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\EconomyPage.xaml">
+    <EmbeddedResource Update="Views\MenuPages\EconomyPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\GalleryPage.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Views\GuidesPage.xaml">
+    <EmbeddedResource Update="Views\MenuPages\GalleryPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\HomePage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\LegalInfoPage.xaml">
+    <EmbeddedResource Update="Views\MenuPages\GuidesPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\MedicinePage.xaml">
+    <EmbeddedResource Update="Views\MenuPages\LegalInfoPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\ProfilePage.xaml">
+    <EmbeddedResource Update="Views\MenuPages\MedicinePage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\TodoList.xaml">
+    <EmbeddedResource Update="Views\MenuPages\ProfilePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\MenuPages\TodoList.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
