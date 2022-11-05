@@ -2,6 +2,7 @@
 <Shell xmlns="http://xamarin.com/schemas/2014/forms" 
        xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
        xmlns:local="clr-namespace:MyHappy2Homes.Views"
+       xmlns:localMenu="clr-namespace:MyHappy2Homes.Views.MenuPages"
        Title="MyHappy2Homes"
        x:Class="MyHappy2Homes.AppShell">
 
@@ -30,20 +31,21 @@
     </Shell.Resources>
 
     <TabBar>
-        <Tab>
+        <Tab x:Name="MainTabs" Title="Home" >
+            <ShellContent Title="Happy2Homes" Icon="icon_about.png"  ContentTemplate="{DataTemplate local:HomePage}" />
+            <ShellContent Title="Calender" Icon="icon_feed.png" ContentTemplate="{DataTemplate localMenu:CalenderPage}" />
+            <ShellContent Title="Profile" Icon="icon_feed.png" ContentTemplate="{DataTemplate localMenu:ProfilePage}" />
+            <ShellContent Title="Medicine" Icon="icon_feed.png" ContentTemplate="{DataTemplate localMenu:MedicinePage}" />
+            <ShellContent Title="Chat" Icon="icon_feed.png" ContentTemplate="{DataTemplate localMenu:ChatPage}" />
+            <ShellContent Title="Economy" Icon="icon_feed.png" ContentTemplate="{DataTemplate localMenu:EconomyPage}" />
+            <ShellContent Title="Gallery" Icon="icon_feed.png" ContentTemplate="{DataTemplate localMenu:GalleryPage}" />
+            <ShellContent Title="Todo" Icon="icon_feed.png" ContentTemplate="{DataTemplate localMenu:TodoList}" />
             <ShellContent Title="About" Icon="icon_about.png"  ContentTemplate="{DataTemplate local:AboutPage}" />
-            <ShellContent Title="Calender" Icon="icon_feed.png" ContentTemplate="{DataTemplate local:CalenderPage}" />
-            <ShellContent Title="Profile" Icon="icon_feed.png" ContentTemplate="{DataTemplate local:ProfilePage}" />
-            <ShellContent Title="Medicine" Icon="icon_feed.png" ContentTemplate="{DataTemplate local:MedicinePage}" />
-            <ShellContent Title="Chat" Icon="icon_feed.png" ContentTemplate="{DataTemplate local:ChatPage}" />
-            <ShellContent Title="Economy" Icon="icon_feed.png" ContentTemplate="{DataTemplate local:EconomyPage}" />
-            <ShellContent Title="Gallery" Icon="icon_feed.png" ContentTemplate="{DataTemplate local:GalleryPage}" />
-            <ShellContent Title="Todo" Icon="icon_feed.png" ContentTemplate="{DataTemplate local:TodoList}" />
         </Tab>
-        <Tab>
-            <ShellContent Title="Advice" Icon="icon_feed.png" ContentTemplate="{DataTemplate local:AdvicePage}" />
-            <ShellContent Title="Guide" Icon="icon_feed.png" ContentTemplate="{DataTemplate local: GuidesPage}" />
-            <ShellContent Title="LegalInfo" Icon="icon_feed.png" ContentTemplate="{DataTemplate local:LegalInfoPage}" />
+        <Tab x:Name="InfoGuideTabs" Title="Info / Guide " >
+            <ShellContent Title="Advice" Icon="icon_feed.png" ContentTemplate="{DataTemplate localMenu:AdvicePage}" />
+            <ShellContent Title="LegalInfo" Icon="icon_feed.png" ContentTemplate="{DataTemplate localMenu:LegalInfoPage}" />
+            <ShellContent Title="Guides" Icon="icon_feed.png" ContentTemplate="{DataTemplate localMenu:GuidesPage}" />
         </Tab>
     </TabBar>
 
@@ -51,9 +53,9 @@
         If you would like to navigate to this content you can do so by calling
         await Shell.Current.GoToAsync("//LoginPage");
     -->
-    <TabBar>
+    <!--<TabBar>
         <ShellContent Route="LoginPage" ContentTemplate="{DataTemplate local:LoginPage}" />
-    </TabBar>
+    </TabBar>-->
    
 
 </Shell>
