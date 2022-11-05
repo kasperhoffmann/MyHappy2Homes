@@ -30,21 +30,8 @@
     </Shell.Resources>
 
     <TabBar>
-        <Tab>
-            <ShellContent Title="About" Icon="icon_about.png"  ContentTemplate="{DataTemplate local:AboutPage}" />
-            <ShellContent Title="Calender" Icon="icon_feed.png" ContentTemplate="{DataTemplate local:CalenderPage}" />
-            <ShellContent Title="Profile" Icon="icon_feed.png" ContentTemplate="{DataTemplate local:ProfilePage}" />
-            <ShellContent Title="Medicine" Icon="icon_feed.png" ContentTemplate="{DataTemplate local:MedicinePage}" />
-            <ShellContent Title="Chat" Icon="icon_feed.png" ContentTemplate="{DataTemplate local:ChatPage}" />
-            <ShellContent Title="Economy" Icon="icon_feed.png" ContentTemplate="{DataTemplate local:EconomyPage}" />
-            <ShellContent Title="Gallery" Icon="icon_feed.png" ContentTemplate="{DataTemplate local:GalleryPage}" />
-            <ShellContent Title="Todo" Icon="icon_feed.png" ContentTemplate="{DataTemplate local:TodoList}" />
-        </Tab>
-        <Tab>
-            <ShellContent Title="Advice" Icon="icon_feed.png" ContentTemplate="{DataTemplate local:AdvicePage}" />
-            <ShellContent Title="Guide" Icon="icon_feed.png" ContentTemplate="{DataTemplate local: GuidesPage}" />
-            <ShellContent Title="LegalInfo" Icon="icon_feed.png" ContentTemplate="{DataTemplate local:LegalInfoPage}" />
-        </Tab>
+        <ShellContent Title="About" Icon="icon_about.png" Route="AboutPage" ContentTemplate="{DataTemplate local:AboutPage}" />
+        <ShellContent Title="Browse" Icon="icon_feed.png" ContentTemplate="{DataTemplate local:ItemsPage}" />
     </TabBar>
 
     <!--
@@ -54,6 +41,6 @@
     <TabBar>
         <ShellContent Route="LoginPage" ContentTemplate="{DataTemplate local:LoginPage}" />
     </TabBar>
-   
+
 
 </Shell>
