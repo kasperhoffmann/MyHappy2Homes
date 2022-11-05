@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace MyHappy2Homes.Views
+namespace MyHappy2Homes.Views.MenuPages
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Guides : ContentPage
+    public partial class GuidesPage : ContentPage
     {
-        public Guides()
+        public GuidesPage()
         {
             InitializeComponent();
         }

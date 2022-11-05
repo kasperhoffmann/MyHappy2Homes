@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace MyHappy2Homes.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Page1 : ContentPage
+    public partial class HomePage : ContentPage
     {
-        public Page1()
+        public HomePage()
         {
             InitializeComponent();
         }
