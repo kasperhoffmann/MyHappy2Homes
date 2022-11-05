@@ -15,7 +15,16 @@ namespace MyHappy2Homes.Views
         public LoginPage()
         {
             InitializeComponent();
-            this.BindingContext = new LoginViewModel();
+        }
+
+        private async void OnSignupClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Signup());
+        }
+
+        private async void OnLoginClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new LoginPage());
         }
     }
 }
