@@ -8,8 +8,16 @@
              Shell.NavBarIsVisible="False">
     <ContentPage.Content>
         <StackLayout Padding="10,0,10,0" VerticalOptions="Center">
-            <Button VerticalOptions="Center" Text="Login" Clicked="OnLoginClicked"/>
-            <Button VerticalOptions="Center" Text="Signup" Clicked="OnSignupClicked"/>
+            <StackLayout>
+                <Label VerticalOptions="Center" Text="Email"></Label>
+            <Entry VerticalOptions="Center" Text="{Binding UserEmail, Mode=TwoWay}" Placeholder="Enter Email" x:Name="emailEntry">
+            </Entry>
+                <Label VerticalOptions="Center" Text="Password"></Label>
+                <Entry VerticalOptions="Center" Text="{Binding Password, Mode=TwoWay}" Placeholder="Enter Password" x:Name="passwordEntry" IsPassword="True">
+            </Entry>
+            <Button VerticalOptions="Center" Text="Login" Command="{Binding LoginCommand}"/>
+                <Label VerticalOptions="Center" Text="Dont have an account? signup now" TextColor="Gray" x:Name="signupLabel"></Label>
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

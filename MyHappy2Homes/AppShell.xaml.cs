@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using MyHappy2Homes.ViewModels;
 using MyHappy2Homes.Views.MenuPages;
 using MyHappy2Homes.Views;
 using Xamarin.Forms;

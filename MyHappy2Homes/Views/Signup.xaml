@@ -1,24 +1,13 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version = "1.0" encoding = "uft-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MyHappy2Homes.Views.Signup">
-    <ContentPage.Content>
+    <ContentPage.Content>    
         <StackLayout>
-            <FlexLayout Direction="Column" JustifyContent="SpaceEvenly" Margin="30">
-                <Label Text="Full Name"></Label>
-                <Entry Placeholder="Full Name"></Entry>
-                <Label Text="Email"></Label>
-                <Entry Placeholder="Email"></Entry>
-                <Label Text="Username"></Label>
-                <Entry Placeholder="Username"></Entry>
-                <Label Text="Cell Nr"></Label>
-                <Entry Placeholder="Cell nr"></Entry>
-                <Label Text="Street name"></Label>
-                <Entry Placeholder="Street name"></Entry>
-            </FlexLayout>
-            <StackLayout>
-                <Button Text="Signup"></Button>
-            </StackLayout>
-        </StackLayout>
-    </ContentPage.Content>
+            <Entry x:Name="emailEntry" Placeholder="Email" Text="{Binding Email}" Keyboard="Email"></Entry>  
+            <Entry x:Name="passwordentry" Placeholder="Password" Text="{Binding Password}" IsPassword="True"></Entry>     
+            <Entry x:Name="cfmpasswordentry" Placeholder="Reenter Password" Text="{Binding ConfirmPassword}" IsPassword="True"></Entry>     
+            <Button x:Name="signup" Text="SignUp" Command="{Binding SignUpCommand}" HorizontalOptions="Center"></Button>    
+        </StackLayout>   
+    </ContentPage.Content>     
 </ContentPage>

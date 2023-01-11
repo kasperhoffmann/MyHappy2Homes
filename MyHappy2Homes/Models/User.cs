@@ -7,16 +7,9 @@ namespace MyHappy2Homes.Models
 {
     public class User
     {
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
-        public string FullName 
-        {
-            get
-            {
-                return FirstName + " " + LastName;
-            }
-        }
-        public int Age;
-
+        public string FullName { get; set; }
+        public int Age { get; set; }
+        public string CellNumber { get; set; }
+        public string StreetName { get; set; }
     }
 }
